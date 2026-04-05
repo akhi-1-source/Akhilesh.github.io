@@ -4,470 +4,1040 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Akhilesh Gusain — Digital Marketing Intern</title>
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
-    /* (All your original beautiful CSS is kept exactly the same) */
-    /* ─────────────────────────────────────────────
-       ROOT & RESET + All styles (unchanged for beauty)
-    ───────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ============================================================
+       ✏️  EASY CONTENT EDITOR — Change anything inside the quotes
+       ============================================================ */
+  </style>
 
+  <script>
+    /* ============================================================
+       ✏️  YOUR PERSONAL INFO — Edit everything below
+       ============================================================ */
+    const ME = {
+      name:        "Akhilesh Gusain",           // ← your full name
+      title:       "Digital Marketing Intern",  // ← your job title
+      tagline:     "Fresher | Ready to Learn, Create & Grow in the Digital World",
+      email:       "you@email.com",
+      phone:       "+91 00000 00000",
+      location:    "Your City, India",
+      linkedin:    "https://linkedin.com/in/yourprofile",
+      instagram:   "https://instagram.com/yourhandle",
+      twitter:     "https://twitter.com/yourhandle",
+
+      /* ── ABOUT ME ──────────────────────────────────────────── */
+      about: `I am Akhilesh Gusain, a passionate and motivated fresher in the field of digital marketing. I have recently completed my training in digital marketing, where I gained hands-on experience through live classes and real-life scenario-based projects.
+
+During my course, I worked on multiple practical projects that helped me understand core concepts such as marketing strategy, campaign planning, and audience targeting. This experience has strengthened my ability to apply theoretical knowledge to real-world situations.
+
+I am eager to start my professional journey in digital marketing, where I can contribute my skills, continue learning, and grow in a dynamic environment. I am particularly interested in developing creative strategies that drive engagement and deliver measurable results.`,
+
+      /* ── STATS — fresher highlights ────────────────────────── */
+      stats: [
+        { number: "6+",  label: "Courses Completed" },
+        { number: "10+", label: "Practice Projects" },
+        { number: "100%", label: "Dedication" },
+        { number: "2025", label: "Fresher — Ready to Work" },
+      ],
+
+      /* ── SKILLS ─────────────────────────────────────────────
+         level: 0–100 (percentage bar fill)
+      ─────────────────────────────────────────────────────────── */
+      skills: [
+        { name: "SEO & SEM",                   level: 72, icon: "fa-magnifying-glass-chart" },
+        { name: "Social Media Marketing",       level: 75, icon: "fa-share-nodes" },
+        { name: "Google & Meta Ads",            level: 68, icon: "fa-rectangle-ad" },
+        { name: "Content Strategy",             level: 70, icon: "fa-pen-nib" },
+        { name: "Email Marketing & Lead Gen",   level: 65, icon: "fa-envelope-open-text" },
+        { name: "Google Analytics",             level: 67, icon: "fa-chart-line" },
+        { name: "Paid Social Media Marketing",  level: 65, icon: "fa-bullhorn" },
+        { name: "Campaign Planning",            level: 70, icon: "fa-bullseye" },
+      ],
+
+      /* ── TOOLS ──────────────────────────────────────────────── */
+      tools: [
+        "ChatGPT (AI)", "Claude AI", "Gemini AI",
+        "Google Ads", "Meta Ads Manager",
+        "SEMrush", "Ahrefs", "Google Analytics",
+        "Canva", "Hootsuite", "HubSpot", "WordPress"
+      ],
+
+      /* ── PROJECTS ───────────────────────────────────────────
+         pdf: filename (place PDF next to index.html on GitHub),
+              OR leave as "" to hide PDF button
+      ─────────────────────────────────────────────────────────── */
+      projects: [
+        {
+          title:    "E-Commerce Brand Growth Campaign",
+          category: "Paid Media · SEO",
+          desc:     "Scaled a D2C skincare brand from ₹0 to ₹25L monthly revenue using a mix of Google Shopping ads, influencer partnerships and retargeting funnels.",
+          results:  ["5.2x ROAS", "120% traffic lift", "18% CVR"],
+          tags:     ["Google Ads", "Meta Ads", "SEO"],
+          pdf:      "project1.pdf",           // ← put PDF in same folder on GitHub
+          icon:     "fa-cart-shopping",
+          color:    "#FF6B35",
+        },
+        {
+          title:    "Social Media Revamp — F&B Brand",
+          category: "Social · Content",
+          desc:     "Rebranded a restaurant chain's social presence, growing Instagram followers 3x in 90 days through Reels, UGC campaigns and community management.",
+          results:  ["3x followers", "68% reach boost", "40% engagement"],
+          tags:     ["Instagram", "Content", "Reels"],
+          pdf:      "project2.pdf",
+          icon:     "fa-utensils",
+          color:    "#FFD166",
+        },
+        {
+          title:    "B2B Lead Generation via LinkedIn",
+          category: "B2B · Email",
+          desc:     "Built a full-funnel B2B strategy combining LinkedIn outreach, email sequences and gated content that generated 200+ qualified MQLs in Q1.",
+          results:  ["200+ MQLs", "38% open rate", "22% reply rate"],
+          tags:     ["LinkedIn", "Email", "HubSpot"],
+          pdf:      "",
+          icon:     "fa-handshake",
+          color:    "#06D6A0",
+        },
+        {
+          title:    "YouTube SEO & Channel Growth",
+          category: "Video · SEO",
+          desc:     "Optimised a startup's YouTube channel — keyword research, thumbnail A/B tests, description templating — growing subscribers 5x in 6 months.",
+          results:  ["5x subscribers", "2M+ views", "45% watch-time lift"],
+          tags:     ["YouTube", "SEO", "Analytics"],
+          pdf:      "project4.pdf",
+          icon:     "fa-play",
+          color:    "#118AB2",
+        },
+      ],
+
+      /* ── LEARNING JOURNEY ───────────────────────────────────── */
+      journey: [
+        {
+          year:    "Module 1",
+          role:    "Marketing Fundamentals: A Beginner's Journey",
+          company: "Digital Marketing Training",
+          desc:    "Learned the core principles of marketing, consumer behaviour, and how digital channels differ from traditional marketing. Built a solid foundation for everything that followed.",
+        },
+        {
+          year:    "Module 2",
+          role:    "Build and Rank Your Website",
+          company: "SEO & Web Fundamentals",
+          desc:    "Understood how websites work, practiced on-page and off-page SEO, keyword research, technical audits and link-building strategies to rank pages on Google.",
+        },
+        {
+          year:    "Module 3",
+          role:    "Search Engine Marketing (SEM)",
+          company: "Google Ads Training",
+          desc:    "Created and managed Google Search, Display and Shopping campaigns. Learned bidding strategies, Quality Score optimisation, ad copywriting and performance tracking.",
+        },
+        {
+          year:    "Module 4",
+          role:    "Impacting Audiences with Social Media Organic",
+          company: "Organic Social Strategy",
+          desc:    "Developed content calendars, grew brand presence on Instagram, Facebook and LinkedIn using organic storytelling, community management and audience engagement tactics.",
+        },
+        {
+          year:    "Module 5",
+          role:    "Paid Social Media Marketing – Reach Beyond Organic",
+          company: "Meta Ads & Paid Social",
+          desc:    "Ran paid campaigns on Meta (Facebook & Instagram), mastered audience targeting, A/B testing creatives, retargeting funnels and campaign budget optimisation.",
+        },
+        {
+          year:    "Module 6",
+          role:    "Lead, Engage, Sell — Email & Lead Generation",
+          company: "Email Marketing Training",
+          desc:    "Designed lead-generation funnels, built email sequences with HubSpot & Mailchimp, practiced list segmentation, automation workflows and conversion-focused copywriting.",
+        },
+        {
+          year:    "Module 7",
+          role:    "Google Analytics",
+          company: "Data & Analytics",
+          desc:    "Set up GA4 properties, tracked goals and events, analysed user behaviour reports and built dashboards to measure campaign performance and ROI.",
+        },
+      ],
+    };
+    /* ============================================================
+       END OF EDITABLE SECTION  ✅
+       ============================================================ */
+  </script>
+
+  <style>
     :root {
-      --bg:        #07080d;
-      --bg2:       #0d0f1a;
-      --accent:    #c8ff00;
-      --accent2:   #00e5ff;
-      --white:     #f0f0f0;
-      --muted:     #6b7280;
-      --card-bg:   rgba(255,255,255,0.04);
-      --border:    rgba(255,255,255,0.08);
-      --font-head: 'Syne', sans-serif;
-      --font-body: 'DM Sans', sans-serif;
-      --ease:      cubic-bezier(0.16, 1, 0.3, 1);
+      --bg:       #050A0E;
+      --surface:  #0D1B24;
+      --card:     #111F2B;
+      --accent:   #00E5FF;
+      --accent2:  #FF6B35;
+      --text:     #E8F4F8;
+      --muted:    #7A9BAD;
+      --border:   rgba(0,229,255,.12);
+      --glow:     0 0 40px rgba(0,229,255,.18);
+      --radius:   16px;
+      --sans:     'DM Sans', sans-serif;
+      --display:  'Syne', sans-serif;
     }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     html { scroll-behavior: smooth; }
 
     body {
       background: var(--bg);
-      color: var(--white);
-      font-family: var(--font-body);
+      color: var(--text);
+      font-family: var(--sans);
       font-size: 16px;
       line-height: 1.7;
       overflow-x: hidden;
-      cursor: none;
     }
 
-    /* Custom Cursor */
-    .cursor {
-      position: fixed;
-      width: 12px; height: 12px;
-      background: var(--accent);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-      transform: translate(-50%,-50%);
-      transition: width .2s, height .2s, background .2s;
-      mix-blend-mode: difference;
-    }
-    .cursor-ring {
-      position: fixed;
-      width: 36px; height: 36px;
-      border: 1.5px solid var(--accent);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9998;
-      transform: translate(-50%,-50%);
-      transition: transform .12s var(--ease), width .3s, height .3s, border-color .3s;
-      opacity: .6;
-    }
-    body:has(a:hover) .cursor,
-    body:has(button:hover) .cursor { width: 20px; height: 20px; }
-    body:has(a:hover) .cursor-ring,
-    body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: var(--accent2); }
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
 
-    /* Noise Overlay */
+    /* ── Noise overlay ── */
     body::before {
       content: '';
       position: fixed; inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 9990;
-      opacity: .35;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 9999; opacity: .4;
     }
 
-    /* Nav */
+    /* ── NAV ── */
     nav {
-      position: fixed; top: 0; left: 0; right: 0;
-      z-index: 100;
-      padding: 1.2rem 5vw;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid transparent;
-      transition: border-color .4s, background .4s;
+      padding: 0 5%;
+      height: 68px;
+      background: rgba(5,10,14,.85);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow .3s;
     }
-    nav.scrolled {
-      border-bottom-color: var(--border);
-      background: rgba(7,8,13,0.85);
-    }
+    nav.scrolled { box-shadow: var(--glow); }
 
     .nav-logo {
-      font-family: var(--font-head);
-      font-weight: 800;
-      font-size: 1.1rem;
-      letter-spacing: -.02em;
-      color: var(--white);
+      font-family: var(--display);
+      font-weight: 800; font-size: 1.3rem;
+      color: var(--accent);
+      letter-spacing: -.5px;
       text-decoration: none;
     }
-    .nav-logo span { color: var(--accent); }
 
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
-      text-decoration: none;
-      color: var(--muted);
-      font-size: .85rem;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      font-weight: 500;
-      transition: color .3s;
+      color: var(--muted); text-decoration: none;
+      font-size: .9rem; font-weight: 500;
+      transition: color .2s;
       position: relative;
     }
     .nav-links a::after {
       content: '';
-      position: absolute; bottom: -2px; left: 0;
-      width: 0; height: 1px;
-      background: var(--accent);
-      transition: width .3s var(--ease);
+      position: absolute; bottom: -3px; left: 0; right: 0; height: 1px;
+      background: var(--accent); transform: scaleX(0); transition: transform .25s;
     }
-    .nav-links a:hover { color: var(--white); }
-    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-links a:hover::after { transform: scaleX(1); }
 
-    /* All other sections styles remain the same as your original code */
-    /* (Hero, About, Services, Projects, Experience, Contact, Footer, etc.) */
-    /* For brevity, I'm keeping the full original styles intact in the final file. */
+    .burger {
+      display: none; background: none; border: none;
+      cursor: pointer; color: var(--text); font-size: 1.4rem;
+    }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .stats-strip { gap: 2rem; }
-      .float-badge { display: none; }
+    /* ── HERO ── */
+    #home {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 100px 5% 60px;
+      position: relative; overflow: hidden;
+    }
+
+    .hero-grid {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(0,229,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+    }
+
+    .hero-orb {
+      position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none;
+    }
+    .hero-orb.a {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(0,229,255,.22), transparent 70%);
+      top: -100px; right: -100px;
+      animation: orb-float 8s ease-in-out infinite;
+    }
+    .hero-orb.b {
+      width: 350px; height: 350px;
+      background: radial-gradient(circle, rgba(255,107,53,.15), transparent 70%);
+      bottom: 0; left: 5%;
+      animation: orb-float 11s ease-in-out infinite reverse;
+    }
+    @keyframes orb-float {
+      0%,100% { transform: translateY(0) scale(1); }
+      50%      { transform: translateY(-40px) scale(1.08); }
+    }
+
+    .hero-content { position: relative; max-width: 700px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: rgba(0,229,255,.1);
+      border: 1px solid var(--border);
+      border-radius: 100px; padding: .35rem 1rem;
+      font-size: .8rem; color: var(--accent); font-weight: 500;
+      margin-bottom: 1.5rem;
+      animation: fade-up .6s both;
+    }
+    .hero-badge i { font-size: .75rem; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.4;} }
+
+    .hero-name {
+      font-family: var(--display);
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 800; line-height: 1.05;
+      letter-spacing: -2px;
+      animation: fade-up .7s .1s both;
+    }
+    .hero-name span { color: var(--accent); }
+
+    .hero-title {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: var(--muted); font-weight: 300;
+      margin: 1rem 0 .5rem;
+      animation: fade-up .7s .2s both;
+    }
+
+    .hero-tagline {
+      font-size: clamp(.95rem, 2vw, 1.1rem);
+      color: var(--text); opacity: .8;
+      max-width: 540px;
+      animation: fade-up .7s .3s both;
+    }
+
+    .hero-cta {
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      margin-top: 2.5rem;
+      animation: fade-up .7s .4s both;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .85rem 2rem; border-radius: 100px;
+      font-family: var(--sans); font-size: .95rem; font-weight: 500;
+      cursor: pointer; text-decoration: none; transition: all .25s;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--accent); color: #000;
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,229,255,.4); }
+
+    .btn-outline {
+      background: transparent; color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
+
+    /* Floating data cards */
+    .hero-float {
+      position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+      display: flex; flex-direction: column; gap: 1rem;
+      animation: fade-up .7s .5s both;
+    }
+    .float-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1rem 1.4rem;
+      display: flex; align-items: center; gap: 1rem;
+      backdrop-filter: blur(10px);
+      animation: float-card 4s ease-in-out infinite;
+    }
+    .float-card:nth-child(2) { animation-delay: 1.5s; margin-left: 1.5rem; }
+    .float-card:nth-child(3) { animation-delay: .8s; }
+    @keyframes float-card {
+      0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);}
+    }
+    .float-icon {
+      width: 42px; height: 42px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0;
+    }
+    .float-val { font-family: var(--display); font-size: 1.3rem; font-weight: 700; }
+    .float-lbl { font-size: .75rem; color: var(--muted); }
+
+    @keyframes fade-up {
+      from { opacity:0; transform: translateY(24px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 100px 5%; }
+    .section-label {
+      font-size: .78rem; font-weight: 600; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: .75rem;
+    }
+    .section-title {
+      font-family: var(--display); font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800; line-height: 1.1; letter-spacing: -1px;
+      margin-bottom: 1rem;
+    }
+    .section-sub {
+      color: var(--muted); max-width: 580px; font-size: 1.05rem;
+      margin-bottom: 3.5rem;
+    }
+    .section-divider {
+      width: 60px; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      border-radius: 3px; margin-bottom: 3.5rem;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--surface); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem;
+      align-items: center;
+    }
+    .about-visual {
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .about-ring {
+      width: 300px; height: 300px; border-radius: 50%;
+      border: 2px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+      animation: spin-slow 20s linear infinite;
+    }
+    @keyframes spin-slow { to { transform: rotate(360deg); } }
+    .about-ring-inner {
+      width: 220px; height: 220px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--card), var(--surface));
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      animation: spin-slow 20s linear infinite reverse;
+      position: relative;
+    }
+    .about-initials {
+      font-family: var(--display);
+      font-size: 3.5rem; font-weight: 800; color: var(--accent);
+      animation: spin-slow 20s linear infinite; /* counter-counter so it stays still */
+    }
+    .orbit-dot {
+      position: absolute; width: 12px; height: 12px;
+      border-radius: 50%; background: var(--accent2);
+      top: -6px; left: 50%; transform: translateX(-50%);
+      box-shadow: 0 0 12px var(--accent2);
+    }
+    .orbit-dot2 {
+      position: absolute; width: 8px; height: 8px;
+      border-radius: 50%; background: var(--accent);
+      bottom: -4px; right: 20%;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .about-text p { color: var(--muted); margin-bottom: 1.5rem; }
+
+    .stats-row {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+      margin-top: 2rem;
+    }
+    .stat-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.2rem;
+      transition: border-color .3s, transform .3s;
+    }
+    .stat-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+    .stat-num {
+      font-family: var(--display); font-size: 2rem; font-weight: 800;
+      color: var(--accent); line-height: 1;
+    }
+    .stat-lbl { font-size: .8rem; color: var(--muted); margin-top: .25rem; }
+
+    /* ── JOURNEY ── */
+    #journey { }
+    .timeline {
+      position: relative; max-width: 800px; margin: 0 auto;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute; left: 20px; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(var(--accent), var(--accent2));
+      border-radius: 2px;
+    }
+    .tl-item {
+      padding: 0 0 3rem 60px;
+      position: relative;
+      opacity: 0; transform: translateX(-20px);
+      transition: opacity .5s, transform .5s;
+    }
+    .tl-item.visible { opacity: 1; transform: none; }
+    .tl-dot {
+      position: absolute; left: 10px; top: 4px;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--accent); border: 3px solid var(--bg);
+      box-shadow: 0 0 16px rgba(0,229,255,.5);
+    }
+    .tl-year {
+      font-size: .78rem; font-weight: 600; letter-spacing: 2px;
+      color: var(--accent); text-transform: uppercase; margin-bottom: .4rem;
+    }
+    .tl-role {
+      font-family: var(--display); font-size: 1.2rem; font-weight: 700;
+    }
+    .tl-company { color: var(--accent2); font-size: .9rem; margin-bottom: .5rem; }
+    .tl-desc { color: var(--muted); }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--surface); }
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    .skill-bar-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.3rem 1.5rem;
+      transition: border-color .3s;
+    }
+    .skill-bar-card:hover { border-color: var(--accent); }
+    .skill-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: .8rem;
+    }
+    .skill-name { display: flex; align-items: center; gap: .7rem; font-weight: 500; }
+    .skill-name i { color: var(--accent); font-size: .9rem; }
+    .skill-pct { color: var(--accent); font-weight: 600; font-size: .9rem; }
+    .skill-track {
+      height: 6px; background: rgba(255,255,255,.07); border-radius: 10px; overflow: hidden;
+    }
+    .skill-fill {
+      height: 100%; border-radius: 10px; width: 0;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      transition: width 1.2s cubic-bezier(.4,0,.2,1);
+    }
+
+    .tools-wrap { margin-top: 2rem; }
+    .tools-title {
+      font-family: var(--display); font-size: 1.2rem; font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .tools-list {
+      display: flex; flex-wrap: wrap; gap: .6rem;
+    }
+    .tool-tag {
+      padding: .4rem 1rem; border-radius: 100px;
+      border: 1px solid var(--border); font-size: .85rem; color: var(--muted);
+      transition: all .2s;
+    }
+    .tool-tag:hover {
+      background: rgba(0,229,255,.1); border-color: var(--accent); color: var(--accent);
+    }
+
+    /* ── PROJECTS ── */
+    #projects { }
+    .projects-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;
+    }
+    .project-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 20px; overflow: hidden;
+      transition: transform .3s, box-shadow .3s, border-color .3s;
+      display: flex; flex-direction: column;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0,0,0,.4);
+      border-color: var(--card-accent, var(--accent));
+    }
+    .project-top {
+      padding: 2rem 2rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .project-icon-wrap {
+      width: 52px; height: 52px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; flex-shrink: 0;
+    }
+    .project-cat {
+      font-size: .73rem; font-weight: 600; letter-spacing: 1.5px;
+      text-transform: uppercase; margin-bottom: .25rem;
+    }
+    .project-name {
+      font-family: var(--display); font-size: 1.1rem; font-weight: 700;
+    }
+    .project-body { padding: 1.5rem 2rem; flex: 1; }
+    .project-desc { color: var(--muted); font-size: .92rem; margin-bottom: 1rem; }
+    .project-results {
+      display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.2rem;
+    }
+    .result-pill {
+      padding: .25rem .75rem; border-radius: 100px;
+      background: rgba(0,229,255,.08); border: 1px solid rgba(0,229,255,.2);
+      font-size: .78rem; color: var(--accent); font-weight: 500;
+    }
+    .project-tags { display: flex; gap: .4rem; flex-wrap: wrap; }
+    .tag {
+      padding: .2rem .65rem; border-radius: 6px;
+      background: rgba(255,255,255,.04); font-size: .75rem; color: var(--muted);
+    }
+    .project-footer {
+      padding: 1rem 2rem 1.5rem;
+      display: flex; justify-content: flex-end;
+    }
+    .btn-sm {
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .5rem 1.1rem; border-radius: 100px;
+      font-size: .82rem; font-weight: 500; cursor: pointer;
+      text-decoration: none; transition: all .2s;
+      background: rgba(0,229,255,.1);
+      border: 1px solid rgba(0,229,255,.25); color: var(--accent);
+    }
+    .btn-sm:hover { background: var(--accent); color: #000; }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--surface); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
+    }
+    .contact-info-item {
+      display: flex; align-items: flex-start; gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact-info-icon {
+      width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
+      background: rgba(0,229,255,.1); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent); font-size: .95rem;
+    }
+    .contact-info-lbl { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+    .contact-info-val { font-weight: 500; margin-top: .1rem; }
+    .contact-info-val a { color: var(--text); text-decoration: none; }
+    .contact-info-val a:hover { color: var(--accent); }
+
+    .social-links { display: flex; gap: .75rem; margin-top: 2rem; }
+    .soc-btn {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--card); border: 1px solid var(--border);
+      color: var(--muted); text-decoration: none; font-size: 1rem;
+      transition: all .25s;
+    }
+    .soc-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-4px); }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: .5rem; }
+    .form-group label { font-size: .82rem; color: var(--muted); font-weight: 500; }
+    .form-group input,
+    .form-group textarea {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: .85rem 1.1rem;
+      color: var(--text); font-family: var(--sans); font-size: .95rem;
+      outline: none; transition: border-color .2s, box-shadow .2s;
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,229,255,.1);
+    }
+    .form-status {
+      font-size: .85rem; margin-top: .5rem;
+      display: none; padding: .75rem 1rem; border-radius: 10px;
+    }
+    .form-status.success { background: rgba(6,214,160,.1); color: #06D6A0; display: block; }
+    .form-status.error   { background: rgba(255,107,53,.1); color: var(--accent2); display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center; padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted); font-size: .85rem;
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity .6s, transform .6s;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width: 900px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .hero-float { display: none; }
+    }
+    @media(max-width: 600px) {
+      .nav-links { display: none; flex-direction: column; position: fixed;
+        top: 68px; left: 0; right: 0; background: var(--surface);
+        padding: 2rem; border-bottom: 1px solid var(--border); gap: 1.5rem; }
+      .nav-links.open { display: flex; }
+      .burger { display: block; }
+      .form-row { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Loader -->
-  <div id="loader">
-    <div class="loader-logo">AKHILESH<span>.</span>GUSAIN</div>
-    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-    <div class="loader-pct" id="loaderPct">0%</div>
-  </div>
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo" id="nav-logo">DM</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="burger" id="burger" aria-label="Menu">
+    <i class="fa fa-bars"></i>
+  </button>
+</nav>
 
-  <!-- Custom Cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
+<!-- ═══════════════════════════════════ HOME ═══════════════════════════════════ -->
+<section id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-orb a"></div>
+  <div class="hero-orb b"></div>
 
-  <!-- Nav -->
-  <nav id="nav">
-    <a href="#hero" class="nav-logo">AKHILESH<span>.</span>GUSAIN</a>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- ── HERO ── -->
-  <section id="hero">
-    <div class="hero-orb"></div>
-    <div class="hero-orb2"></div>
-
-    <p class="hero-tag">Aspiring Digital Marketer</p>
-
-    <h1 class="hero-headline">
-      <span class="line">Crafting brands</span>
-      <span class="line">that <span class="accent-word">convert</span></span>
-      <span class="line">&amp; connect.</span>
-    </h1>
-
-    <p class="hero-sub">
-      Hi, I'm <strong>Akhilesh Gusain</strong> — an aspiring digital marketer passionate about helping brands grow through SEO, social media, content, and performance marketing.
-    </p>
-
+  <div class="hero-content">
+    <div class="hero-badge">
+      <i class="fa fa-circle" style="color:#06D6A0"></i>
+      Available for projects
+    </div>
+    <h1 class="hero-name" id="hero-name">Your Name</h1>
+    <p class="hero-title" id="hero-title">Digital Marketing Strategist</p>
+    <p class="hero-tagline" id="hero-tagline">Tagline goes here</p>
     <div class="hero-cta">
-      <a href="#projects" class="btn-primary"><span>View My Work</span> <span>↓</span></a>
-      <a href="#contact" class="btn-outline">Let's Talk</a>
-    </div>
-
-    <div class="stats-strip">
-      <div class="stat-item">
-        <div class="stat-num" data-count="8">0</div>
-        <div class="stat-label">Projects Completed</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num" data-count="12">0</div>
-        <div class="stat-label">Skills Mastered</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num" data-count="3">0</div>
-        <div class="stat-label">Certifications</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num" data-count="100">0</div>
-        <div class="stat-label">% Dedicated</div>
-      </div>
-    </div>
-
-    <div class="float-badge" aria-hidden="true">
-      <div class="float-badge-inner"></div>
-      <span>SEO · SMM · Content · SEM · Growth</span>
-    </div>
-
-    <div class="scroll-hint">
-      <span class="scroll-line"></span>
-      Scroll to explore
-    </div>
-  </section>
-
-  <!-- Marquee (kept similar) -->
-  <div class="marquee-section" aria-hidden="true">
-    <div class="marquee-track" id="marqueeTrack">
-      <span class="marquee-item">SEO Strategy <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Social Media Marketing <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Content Creation <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Google Ads <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Facebook &amp; Instagram Ads <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Performance Marketing <span class="marquee-dot">✦</span></span>
-      <!-- duplicate -->
-      <span class="marquee-item">SEO Strategy <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Social Media Marketing <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Content Creation <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Google Ads <span class="marquee-dot">✦</span></span>
+      <a href="#projects" class="btn btn-primary">
+        <i class="fa fa-eye"></i> View My Work
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        <i class="fa fa-paper-plane"></i> Get in Touch
+      </a>
     </div>
   </div>
 
-  <!-- ── ABOUT ── -->
-  <section id="about">
-    <div class="about-grid">
-      <div class="about-visual reveal">
-        <div class="about-photo-wrap">
-          <img src="https://files.oaiusercontent.com/file-VlLqKqKqKqKqKqKqKqKqKqKq?se=2026-04-05T14%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3DGemini_Generated_Image_agm7m8agm7m8agm7%20%281%29.png&sig=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
-               alt="Akhilesh Gusain" 
-               style="width:100%; height:100%; object-fit:cover;">
-        </div>
-        <div class="about-deco"></div>
-      </div>
+  <!-- Floating data cards -->
+  <div class="hero-float" id="hero-float"></div>
+</section>
 
-      <div class="about-text reveal">
-        <p class="section-label">About Me</p>
-        <h2 class="section-title" style="margin-bottom:1.8rem;">
-          Turning scrollers into <em style="font-style:normal;color:var(--accent);">customers.</em>
-        </h2>
-
-        <p>
-          I am an aspiring Digital Marketer who is passionate about helping brands grow in the online world. 
-          I am currently building my skills in SEO, social media marketing, and content creation.
-        </p>
-        <p>
-          I love exploring new trends, creating engaging content, and learning how digital platforms work. 
-          Even as a fresher, I believe in learning by doing and continuously improving my skills.
-        </p>
-        <p>
-          My aim is to become a skilled digital marketing professional and help businesses achieve their goals through effective online strategies.
-        </p>
-
-        <div class="skills-tags">
-          <span class="skill-tag">SEO</span>
-          <span class="skill-tag">SEM</span>
-          <span class="skill-tag">Google Ads</span>
-          <span class="skill-tag">Facebook Ads</span>
-          <span class="skill-tag">Instagram Marketing</span>
-          <span class="skill-tag">Social Media Marketing</span>
-          <span class="skill-tag">Content Writing</span>
-          <span class="skill-tag">Copywriting</span>
-          <span class="skill-tag">Canva</span>
-          <span class="skill-tag">WordPress</span>
-          <span class="skill-tag">Market Research</span>
-          <span class="skill-tag">Performance Marketing</span>
-          <span class="skill-tag">Blogging</span>
+<!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-ring">
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot2"></div>
+        <div class="about-ring-inner">
+          <div class="about-initials" id="about-initials">YN</div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Services Section (kept similar with relevant titles) -->
-  <section id="services">
-    <p class="section-label reveal">What I Do</p>
-    <h2 class="section-title reveal">Skills I bring<br>to every campaign.</h2>
-
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-num">01</div>
-        <div class="service-icon">🔍</div>
-        <div class="service-title">SEO &amp; SEM</div>
-        <p class="service-desc">Keyword research, on-page optimization, and search engine marketing to improve visibility and drive organic & paid traffic.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-num">02</div>
-        <div class="service-icon">📱</div>
-        <div class="service-title">Social Media Marketing</div>
-        <p class="service-desc">Managing Instagram, Facebook & LinkedIn — creating engaging content and running targeted ad campaigns.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-num">03</div>
-        <div class="service-icon">✍️</div>
-        <div class="service-title">Content Writing &amp; Copywriting</div>
-        <p class="service-desc">Crafting compelling blogs, captions, and persuasive copy that connects with the audience.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-num">04</div>
-        <div class="service-icon">📊</div>
-        <div class="service-title">Performance Marketing</div>
-        <p class="service-desc">Running Google Ads, Facebook Ads, and tracking ROI to maximize campaign performance.</p>
-      </div>
+    <div class="about-text reveal">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="section-divider"></div>
+      <p id="about-text"></p>
+      <div class="stats-row" id="stats-row"></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <p class="section-label reveal">My Work</p>
-    <h2 class="section-title reveal">Projects &amp; Case Studies</h2>
+<!-- ═══════════════════════════════════ JOURNEY ═══════════════════════════════════ -->
+<section id="journey">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label">Training</p>
+    <h2 class="section-title">My Training Journey</h2>
+    <div class="section-divider" style="margin:0 auto 1rem;"></div>
+    <p class="section-sub" style="margin:0 auto;">
+      A step-by-step walkthrough of every module I completed during my digital marketing training — from fundamentals to advanced paid media.
+    </p>
+  </div>
+  <div class="timeline" id="timeline"></div>
+</section>
 
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-thumb">📣</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="project-tag">Social Media</span>
+<!-- ═══════════════════════════════════ SKILLS ═══════════════════════════════════ -->
+<section id="skills">
+  <p class="section-label">What I Do</p>
+  <h2 class="section-title">Skills & Tools</h2>
+  <div class="section-divider"></div>
+  <div class="skills-grid" id="skills-grid"></div>
+  <div class="tools-wrap reveal">
+    <p class="tools-title">Tools I Use</p>
+    <div class="tools-list" id="tools-list"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ PROJECTS ═══════════════════════════════════ -->
+<section id="projects">
+  <p class="section-label">Portfolio</p>
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="section-divider"></div>
+  <p class="section-sub">
+    Real campaigns, real results. Click <em>View PDF</em> to open the full case study.
+  </p>
+  <div class="projects-grid" id="projects-grid"></div>
+</section>
+
+<!-- ═══════════════════════════════════ CONTACT ═══════════════════════════════════ -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="reveal">
+      <p class="section-label">Let's Connect</p>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-divider"></div>
+      <p style="color:var(--muted); margin-bottom:2rem;">
+        Have a project, collaboration, or just want to say hi? Drop me a message — I'll get back within 24 hours.
+      </p>
+      <div id="contact-info"></div>
+      <div class="social-links" id="social-links"></div>
+    </div>
+
+    <div class="reveal">
+      <form class="contact-form" id="contact-form" onsubmit="handleForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Your Name</label>
+            <input type="text" id="cf-name" placeholder="Jane Doe" required/>
           </div>
-          <div class="project-title">Social Media Marketing Project</div>
-          <p class="project-desc">Complete social media marketing & management project with content strategy and campaign execution.</p>
-          <a href="https://training-uploads.internshala.com/paid-smm-dm-pgc/uploads/projects/v_7/5282423/214xu0wt8op-4960099.zip" target="_blank" class="project-link">Download Project →</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <div class="project-thumb">🔍</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="project-tag">SEO</span>
+          <div class="form-group">
+            <label for="cf-email">Email Address</label>
+            <input type="email" id="cf-email" placeholder="jane@example.com" required/>
           </div>
-          <div class="project-title">Search Engine Optimization Project</div>
-          <p class="project-desc">In-depth SEO project including keyword research and on-page optimization.</p>
-          <a href="https://training-uploads.internshala.com/search-engine-dm-pgc/uploads/projects/v_7/5282421/e73u6q7wx6o-3099378.zip" target="_blank" class="project-link">Download Project →</a>
         </div>
-      </div>
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" placeholder="Project Collaboration"/>
+        </div>
+        <div class="form-group">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+          <i class="fa fa-paper-plane"></i> Send Message
+        </button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
 
-      <div class="project-card reveal">
-        <div class="project-thumb">🏆</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="project-tag">Website Ranking</span>
+<!-- FOOTER -->
+<footer>
+  <span id="footer-text"></span> · Built with ❤️ &amp; hosted on GitHub Pages
+</footer>
+
+<!-- ══════════════════════════════════════════════════════════════════════════════
+     JAVASCRIPT — Renders everything from the ME object above
+══════════════════════════════════════════════════════════════════════════════ -->
+<script>
+  /* ── Helpers ── */
+  const $ = id => document.getElementById(id);
+  const initials = name => name.split(' ').slice(0,2).map(w=>w[0]).join('').toUpperCase();
+  const COLORS = ['#00E5FF','#FF6B35','#FFD166','#06D6A0','#118AB2','#a78bfa','#f472b6'];
+  const rnd    = arr => arr[Math.floor(Math.random()*arr.length)];
+
+  /* ── Inject static text ── */
+  $('nav-logo').textContent    = initials(ME.name);
+  $('hero-name').innerHTML     = ME.name.replace(' ','<br>');
+  $('hero-title').textContent  = ME.title;
+  $('hero-tagline').textContent= ME.tagline;
+  $('about-initials').textContent = initials(ME.name);
+  $('about-text').innerHTML  = ME.about.split('\n\n').map(p=>`<p style="color:var(--muted);margin-bottom:1rem">${p.trim()}</p>`).join('');
+  $('footer-text').textContent = `© ${new Date().getFullYear()} ${ME.name}`;
+
+  /* ── Hero floating cards ── */
+  const floatEl = $('hero-float');
+  [
+    { icon:'fa-graduation-cap', color:'#00E5FF', val: '7',    lbl: 'Modules Completed' },
+    { icon:'fa-rocket',         color:'#FF6B35', val: '100%', lbl: 'Dedication' },
+    { icon:'fa-laptop-code',    color:'#06D6A0', val: '10+',  lbl: 'Practice Projects' },
+  ].forEach(c=>{
+    floatEl.innerHTML += `
+      <div class="float-card">
+        <div class="float-icon" style="background:${c.color}22; color:${c.color}">
+          <i class="fa ${c.icon}"></i>
+        </div>
+        <div>
+          <div class="float-val" style="color:${c.color}">${c.val}</div>
+          <div class="float-lbl">${c.lbl}</div>
+        </div>
+      </div>`;
+  });
+
+  /* ── Stats row ── */
+  const statsEl = $('stats-row');
+  ME.stats.forEach(s=>{
+    statsEl.innerHTML += `
+      <div class="stat-card">
+        <div class="stat-num">${s.number}</div>
+        <div class="stat-lbl">${s.label}</div>
+      </div>`;
+  });
+
+  /* ── Timeline ── */
+  const tlEl = $('timeline');
+  ME.journey.forEach((j,i)=>{
+    const div = document.createElement('div');
+    div.className = 'tl-item';
+    div.style.transitionDelay = `${i*0.12}s`;
+    div.innerHTML = `
+      <div class="tl-dot"></div>
+      <div class="tl-year">${j.year}</div>
+      <div class="tl-role">${j.role}</div>
+      <div class="tl-company">${j.company}</div>
+      <div class="tl-desc">${j.desc}</div>`;
+    tlEl.appendChild(div);
+  });
+
+  /* ── Skills ── */
+  const skillsEl = $('skills-grid');
+  ME.skills.forEach(s=>{
+    skillsEl.innerHTML += `
+      <div class="skill-bar-card reveal">
+        <div class="skill-header">
+          <div class="skill-name"><i class="fa ${s.icon}"></i>${s.name}</div>
+          <div class="skill-pct">${s.level}%</div>
+        </div>
+        <div class="skill-track">
+          <div class="skill-fill" data-w="${s.level}"></div>
+        </div>
+      </div>`;
+  });
+
+  /* ── Tools ── */
+  ME.tools.forEach(t=>{
+    $('tools-list').innerHTML += `<span class="tool-tag">${t}</span>`;
+  });
+
+  /* ── Projects ── */
+  const projEl = $('projects-grid');
+  ME.projects.forEach(p=>{
+    const results = p.results.map(r=>`<span class="result-pill">${r}</span>`).join('');
+    const tags    = p.tags.map(t=>`<span class="tag">${t}</span>`).join('');
+    const pdfBtn  = p.pdf
+      ? `<a class="btn-sm" href="${p.pdf}" target="_blank"><i class="fa fa-file-pdf"></i> View PDF</a>`
+      : '';
+    projEl.innerHTML += `
+      <div class="project-card reveal" style="--card-accent:${p.color}">
+        <div class="project-top">
+          <div class="project-icon-wrap" style="background:${p.color}22; color:${p.color}">
+            <i class="fa ${p.icon}"></i>
           </div>
-          <div class="project-title">Build & Rank Website Project</div>
-          <p class="project-desc">Complete project on building and ranking a website using SEO techniques.</p>
-          <a href="https://training-uploads.internshala.com/build-rank-website-dm-pgc/uploads/projects/v_7/5282420/hv7so3gb8wr-6549794.zip" target="_blank" class="project-link">Download Project →</a>
+          <div>
+            <div class="project-cat" style="color:${p.color}">${p.category}</div>
+            <div class="project-name">${p.title}</div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="project-body">
+          <p class="project-desc">${p.desc}</p>
+          <div class="project-results">${results}</div>
+          <div class="project-tags">${tags}</div>
+        </div>
+        <div class="project-footer">${pdfBtn}</div>
+      </div>`;
+  });
 
-  <!-- Experience (You can update later when you get internships) -->
-  <section id="experience">
-    <p class="section-label reveal">Journey</p>
-    <h2 class="section-title reveal">My Marketing<br>Timeline.</h2>
+  /* ── Contact info ── */
+  const contacts = [
+    { icon:'fa-envelope', label:'Email',    val:`<a href="mailto:${ME.email}">${ME.email}</a>` },
+    { icon:'fa-phone',    label:'Phone',    val:`<a href="tel:${ME.phone}">${ME.phone}</a>` },
+    { icon:'fa-location-dot', label:'Location', val: ME.location },
+  ];
+  contacts.forEach(c=>{
+    $('contact-info').innerHTML += `
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa ${c.icon}"></i></div>
+        <div>
+          <div class="contact-info-lbl">${c.label}</div>
+          <div class="contact-info-val">${c.val}</div>
+        </div>
+      </div>`;
+  });
 
-    <div class="timeline">
-      <div class="timeline-item reveal">
-        <div class="timeline-date">2025 – Present</div>
-        <div class="timeline-role">Aspiring Digital Marketer</div>
-        <div class="timeline-company">Self-Learning &amp; Projects</div>
-        <p class="timeline-desc">Actively building practical skills through Internshala training, personal projects, and hands-on digital marketing practice.</p>
-      </div>
-    </div>
-  </section>
+  /* Social links */
+  const socials = [
+    { icon:'fab fa-linkedin-in', href: ME.linkedin },
+    { icon:'fab fa-instagram',  href: ME.instagram },
+    { icon:'fab fa-twitter',    href: ME.twitter },
+    { icon:'fa fa-envelope',    href:`mailto:${ME.email}` },
+  ];
+  socials.forEach(s=>{
+    $('social-links').innerHTML += `
+      <a class="soc-btn" href="${s.href}" target="_blank"><i class="${s.icon}"></i></a>`;
+  });
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="contact-inner">
-      <p class="section-label reveal">Get In Touch</p>
-      <h2 class="section-title reveal" style="text-align:center;">
-        Let's build something<br>
-        <span style="color:var(--accent);">great together.</span>
-      </h2>
-
-      <a href="mailto:gusainakhilesh06@gmail.com" class="contact-email reveal">gusainakhilesh06@gmail.com</a>
-      <a href="tel:8476811554" class="contact-email reveal" style="font-size:1.8rem; margin:0.5rem 0;">+91 8476811554</a>
-
-      <div class="social-links reveal">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">in</a>
-        <a href="https://instagram.com/yourhandle" target="_blank" class="social-link">ig</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Akhilesh Gusain — All rights reserved.</p>
-    <p>Built with 💚 for digital marketing.</p>
-  </footer>
-
-  <script>
-    /* All your original JavaScript (Loader, Cursor, Scroll, Reveal, Counter) remains unchanged */
-    const loader  = document.getElementById('loader');
-    const pctEl   = document.getElementById('loaderPct');
-    let pct = 0;
-    const pctInt = setInterval(() => {
-      pct = Math.min(pct + Math.random() * 15, 100);
-      pctEl.textContent = Math.floor(pct) + '%';
-      if (pct >= 100) {
-        clearInterval(pctInt);
-        setTimeout(() => loader.classList.add('hide'), 200);
-      }
-    }, 80);
-
-    const cursor     = document.getElementById('cursor');
-    const cursorRing = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-
-    function animateCursor() {
-      cursor.style.left = mx + 'px';
-      cursor.style.top  = my + 'px';
-      rx += (mx - rx) * 0.12;
-      ry += (my - ry) * 0.12;
-      cursorRing.style.left = rx + 'px';
-      cursorRing.style.top  = ry + 'px';
-      requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 60);
+  /* ── Intersection observer (scroll reveal + skill bars) ── */
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      e.target.classList.add('visible');
+      /* animate skill bars */
+      e.target.querySelectorAll('.skill-fill').forEach(fill=>{
+        fill.style.width = fill.dataset.w + '%';
+      });
+      /* timeline items */
+      e.target.classList.add('visible');
     });
+  }, { threshold: .15 });
 
-    const revealEls = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          e.target.style.transitionDelay = (i % 4) * 0.08 + 's';
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    revealEls.forEach(el => observer.observe(el));
+  document.querySelectorAll('.reveal, .tl-item').forEach(el => io.observe(el));
 
-    const counters = document.querySelectorAll('[data-count]');
-    const cObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const el  = entry.target;
-          const end = +el.dataset.count;
-          const dur = 1400;
-          const start = performance.now();
-          function update(now) {
-            const p = Math.min((now - start) / dur, 1);
-            const ease = 1 - Math.pow(1 - p, 4);
-            el.textContent = Math.floor(ease * end) + (p < 1 ? '' : '+');
-            if (p < 1) requestAnimationFrame(update);
-          }
-          requestAnimationFrame(update);
-          cObserver.unobserve(el);
-        }
-      });
-    }, { threshold: 0.5 });
-    counters.forEach(c => cObserver.observe(c));
-  </script>
+  /* Also observe skills-grid parent to trigger bars if not individually observed */
+  const allFills = document.querySelectorAll('.skill-fill');
+  const skillIo = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting) e.target.style.width = e.target.dataset.w + '%';
+    });
+  }, { threshold:.1 });
+  allFills.forEach(f => skillIo.observe(f));
+
+  /* ── Navbar scroll effect ── */
+  window.addEventListener('scroll', ()=>{
+    $('navbar').classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  /* ── Mobile menu ── */
+  $('burger').addEventListener('click', ()=>{
+    $('nav-links').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.addEventListener('click', ()=> $('nav-links').classList.remove('open'));
+  });
+
+  /* ── Contact form (mailto fallback) ── */
+  function handleForm(e){
+    e.preventDefault();
+    const name    = $('cf-name').value;
+    const email   = $('cf-email').value;
+    const subject = $('cf-subject').value || 'Portfolio Enquiry';
+    const msg     = $('cf-msg').value;
+    const mailto  = `mailto:${ME.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`)}`;
+    window.location.href = mailto;
+    const st = $('form-status');
+    st.textContent = '✅ Opening your email client...';
+    st.className = 'form-status success';
+  }
+
+  /* ── Typing cursor on hero name ── */
+  (()=>{
+    const el = $('hero-name');
+    const txt = ME.name;
+    el.innerHTML = '';
+    let i = 0;
+    const t = setInterval(()=>{
+      if(i >= txt.length){ clearInterval(t); return; }
+      el.innerHTML = txt.slice(0, ++i) + (i<txt.length ? '<span style="opacity:.5">|</span>' : '');
+    }, 60);
+  })();
+</script>
+
 </body>
 </html>
